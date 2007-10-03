@@ -74,6 +74,10 @@ ServerConfiguration_free(ServerConfiguration** sc)
     free((*sc)->cacertificatePath);
     (*sc)->cacertificatePath = NULL;
   }
+  if ((*sc)->sCertificateDepth) {
+    free((*sc)->sCertificateDepth);
+    (*sc)->sCertificateDepth = NULL;
+  }
   if ((*sc)->keysFile) {
     free((*sc)->keysFile);
     (*sc)->keysFile = NULL;

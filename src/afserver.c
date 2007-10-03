@@ -570,6 +570,9 @@ main(int argc, char **argv)
                               NULL);
 
           cerdepth = ServerConfiguration_get_sCertificateDepth (config);
+          if (cerdepth == NULL) {
+              cerdepth = "9";
+          }
           SSL_CTX_set_verify_depth(ctx, check_value_liberal (cerdepth, "Invalid max certificate-depth"));
         }
 
