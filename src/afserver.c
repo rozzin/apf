@@ -1438,8 +1438,6 @@ main(int argc, char **argv)
                            (SSL_clear isn't sufficient because ssl->new_session is set): */
                         SslFd_set_ssl(ConnectClient_get_sslFd(srClientsTable[k]),
                                       SSL_new (ctx));
-                        SSL_set_fd(SslFd_get_ssl(ConnectClient_get_sslFd(srClientsTable[k])),
-                                   SslFd_get_fd(ConnectClient_get_sslFd(srClientsTable[k])));
 
                         ConnectClient_set_state(srClientsTable[k], CONNECTCLIENT_STATE_FREE);
                         if ((task = ConnectClient_get_task(srClientsTable[k]))) {
