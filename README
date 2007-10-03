@@ -1,4 +1,4 @@
-AF - Active Port Forwarder 0.8.3 - README
+AF - Active Port Forwarder 0.8.4 - README
 Copyright (C) 2003-2007 jeremian - <jeremian [at] poczta.fm>
 =================================================================
 
@@ -666,6 +666,9 @@ README file.
 
  Thanks to Marco Solari <marco.solari [at] koinesistemi.it> for a lot of
 requests, suggestions and ideas.
+
+ Thanks to Joshua Judson Rosen <rozzin [at] geekspace.com> for the patch adding
+certificate-based authentication to the APF.
 
  And thanks for using this software!
 
