@@ -1,3 +1,16 @@
+# Autotools generated files
+/configure
+Makefile.in
+/config.h.in
+/aclocal.m4
+/autom4te.cache
+/depcomp
+/install-sh
+/missing
+/mkinstalldirs
+/stamp-h.in
+/INSTALL
+
 # Object files
 *.o
 *.ko
